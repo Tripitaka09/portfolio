@@ -1,0 +1,18 @@
+{
+  "name": "Portfolio",
+  "user": "ubuntu",
+  "install": ".cursor/scripts/cloud-agent-install.sh",
+  "ports": [
+    {
+      "name": "dev-server",
+      "port": 8080
+    }
+  ],
+  "terminals": [
+    {
+      "name": "dev-server",
+      "command": "python3 -m http.server 8080 --bind 0.0.0.0",
+      "description": "Serves the static portfolio site from the repository root."
+    }
+  ]
+}
